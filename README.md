@@ -18,6 +18,7 @@
 
 
 ## 1. Các chức năng có trong project
+### (Đa số code SQL các chức năng này đều trong [DBMS Project - Query Directory/Procedure](https://github.com/noobpisces/DBMS_Project/tree/master/Database-Management-System-master/Query))
 ### 1.1. Chức năng của người quản lý
 #### 1.1.1. Kiểm tra tài khoản mật khẩu của người quản lý
 #### 1.1.2. Tạo tài khoản
