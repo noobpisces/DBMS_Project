@@ -1,6 +1,20 @@
 # Hệ thống quản lý môn học - DBMS Project
 ### (Project thực hành về SQL, hệ quản trị cở sở dữ liệu SQL server, Dùng WinForms để cung cấp giao diện người dùng đồ họa (GUI))
 ### (Tất cả code SQL đều có trong link [DBMS Project - Query Directory](https://github.com/noobpisces/DBMS_Project/tree/master/Database-Management-System-master/Query))
+# Mục lục
+
+1. [Các chức năng có trong project](#1-cac-chuc-nang-co-trong-project)
+   - [Chức năng của người quản lý](#11-chuc-nang-cua-nguoi-quan-ly)
+   - [Chức năng của học viên](#12-chuc-nang-cua-hoc-vien)
+   - [Chức năng của giảng viên](#13-chuc-nang-cua-giang-vien)
+2. [Entity-Relationship Diagram (ERD)](#2-entity-relationship-diagram-erd)
+3. [Relational Schemas](#3-relational-schemas)
+4. [Các ràng buộc cần có](#4-cac-rang-buoc-can-co)
+5. [Cài đặt các CSDL và các ràng buộc](#5-cai-dat-cac-csdl-va-cac-rang-buoc)
+   - [Tạo các bảng](#51-tao-cac-bang)
+   - [Tạo các view](#52-tao-cac-view)
+   - [Các trigger](#53-cac-trigger)
+   - [Tạo user và phân quyền](#54-tao-user-va-phan-quyen)
 
 ## 1. Các chức năng có trong project
 ### 1.1. Chức năng của người quản lý
