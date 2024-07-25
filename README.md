@@ -1,20 +1,21 @@
 # Hệ thống quản lý môn học - DBMS Project
 ### (Project thực hành về SQL, hệ quản trị cở sở dữ liệu SQL server, Dùng WinForms để cung cấp giao diện người dùng đồ họa (GUI))
 ### (Tất cả code SQL đều có trong link [DBMS Project - Query Directory](https://github.com/noobpisces/DBMS_Project/tree/master/Database-Management-System-master/Query))
-# Mục lục
+# Mục Lục
 
-1. [Các chức năng có trong project](#1-cac-chuc-nang-co-trong-project)
-   - [Chức năng của người quản lý](#11-chuc-nang-cua-nguoi-quan-ly)
-   - [Chức năng của học viên](#12-chuc-nang-cua-hoc-vien)
-   - [Chức năng của giảng viên](#13-chuc-nang-cua-giang-vien)
+1. [Các chức năng có trong project](#1-c%C3%A1c-ch%E1%BB%A9c-n%C4%83ng-c%C3%B3-trong-project)
+   - [Chức năng của người quản lý](#11-ch%C6%B0c-n%C4%83ng-c%E1%BB%A7a-ng%C6%B0%E1%BB%9Di-qu%E1%BA%A3n-l%C3%BD)
+   - [Chức năng của học viên](#12-ch%C6%B0c-n%C4%83ng-c%E1%BB%A7a-h%E1%BB%8Dc-vi%C3%AAn)
+   - [Chức năng của giảng viên](#13-ch%C6%B0c-n%C4%83ng-c%E1%BB%A7a-giang-vi%C3%AAn)
 2. [Entity-Relationship Diagram (ERD)](#2-entity-relationship-diagram-erd)
 3. [Relational Schemas](#3-relational-schemas)
-4. [Các ràng buộc cần có](#4-cac-rang-buoc-can-co)
-5. [Cài đặt các CSDL và các ràng buộc](#5-cai-dat-cac-csdl-va-cac-rang-buoc)
-   - [Tạo các bảng](#51-tao-cac-bang)
-   - [Tạo các view](#52-tao-cac-view)
-   - [Các trigger](#53-cac-trigger)
-   - [Tạo user và phân quyền](#54-tao-user-va-phan-quyen)
+4. [Các ràng buộc cần có](#4-c%C3%A1c-r%C3%A0ng-bu%E1%BB%91c-c%E1%BA%A7n-c%C3%B3)
+5. [Cài đặt các CSDL và các ràng buộc](#5-c%C3%A0i-%C4%91%E1%BA%B7t-c%C3%A1c-csdl-v%C3%A0-c%C3%A1c-r%C3%A0ng-bu%E1%BB%91c)
+   - [Tạo các bảng](#51-t%E1%BA%A1o-c%C3%A1c-b%E1%BA%A3ng)
+   - [Tạo các view](#52-t%E1%BA%A1o-c%C3%A1c-view)
+   - [Các trigger](#53-c%C3%A1c-trigger)
+   - [Tạo user và phân quyền](#54-t%E1%BA%A0o-user-v%C3%A0-ph%C3%A2n-quy%E1%BB%81n)
+
 
 ## 1. Các chức năng có trong project
 ### 1.1. Chức năng của người quản lý
