@@ -1,49 +1,49 @@
 # Hệ thống quản lý môn học - DBMS Project
-### (Project thực hành về SQL, hệ quản trị cở sở dữ liệu SQL server)
+### (Project thực hành về SQL, hệ quản trị cở sở dữ liệu SQL server, Dùng WinForms để cung cấp giao diện người dùng đồ họa (GUI))
 ### (Tất cả code SQL đều có trong link [DBMS Project - Query Directory](https://github.com/noobpisces/DBMS_Project/tree/master/Database-Management-System-master/Query))
 
-## Các chức năng có trong project
-### Chức năng của người quản lý
-#### Kiểm tra tài khoản mật khẩu của người quản lý
-#### Tạo tài khoản
-#### Đổi mật khẩu
-#### Quản lý giảng viên
-##### Hiển thị danh sách thông tin giảng viên
-##### Tìm kiếm thông tin một giảng viên
-##### Xoá thông tin một giảng viên
-##### Thêm một giảng viên
-##### Cập nhật thông tin một giảng viên
-#### Quản lý học viên
-##### Hiển thị danh sách thông tin học viên
-##### Tìm kiếm thông tin một học viên
-##### Xoá thông tin một học viên
-##### Thêm một học viên
-##### Cập nhật thông tin một học viên
-#### Quản lý lớp học
-##### Hiển thị danh sách thông tin lớp học
-##### Tìm kiếm thông tin một lớp học
-##### Xoá thông tin một lớp học
-##### Thêm một lớp học
-##### Cập nhật thông tin một lớp học
-### Chức năng của học viên
-#### Đăng nhập vào hệ thống
-#### Xem các môn có thể đăng kí
-#### Xem các môn đã đăng kí
-#### Xem danh sách lớp của một môn
-#### Học viên đăng ký lớp học
-#### Học viên xóa đăng ký lớp học
-#### Học viên chuyển lớp
-#### Học viên xem danh sách học phí
-#### Học viên xem tổng học phí
-#### Tìm kiếm các lớp đang mở của một môn
-### Chức năng của giảng viên
-#### Đăng nhập vào hệ thống
-#### Xem danh sách lớp dạy
-#### Xem danh sách học viên của lớp đang dạy
-#### Gửi để xuất mở lớp
-## 1.1 Entity-Relationship Diagram (ERD)
+## 1. Các chức năng có trong project
+### 1.1. Chức năng của người quản lý
+#### 1.1.1. Kiểm tra tài khoản mật khẩu của người quản lý
+#### 1.1.2. Tạo tài khoản
+#### 1.1.3. Đổi mật khẩu
+#### 1.1.4. Quản lý giảng viên
+##### a. Hiển thị danh sách thông tin giảng viên
+##### b. Tìm kiếm thông tin một giảng viên
+##### c. Xoá thông tin một giảng viên
+##### d. Thêm một giảng viên
+##### e. Cập nhật thông tin một giảng viên
+#### 1.1.5. Quản lý học viên
+##### a. Hiển thị danh sách thông tin học viên
+##### b. Tìm kiếm thông tin một học viên
+##### c. Xoá thông tin một học viên
+##### d. Thêm một học viên
+##### e. Cập nhật thông tin một học viên
+#### 1.1.6. Quản lý lớp học
+##### a. Hiển thị danh sách thông tin lớp học
+##### b. Tìm kiếm thông tin một lớp học
+##### c. Xoá thông tin một lớp học
+##### d. Thêm một lớp học
+##### e. Cập nhật thông tin một lớp học
+### 1.2. Chức năng của học viên
+#### 1.2.1. Đăng nhập vào hệ thống
+#### 1.2.2. Xem các môn có thể đăng kí
+#### 1.2.3. Xem các môn đã đăng kí
+#### 1.2.4. Xem danh sách lớp của một môn
+#### 1.2.5. Học viên đăng ký lớp học
+#### 1.2.6. Học viên xóa đăng ký lớp học
+#### 1.2.7. Học viên chuyển lớp
+#### 1.2.8. Học viên xem danh sách học phí
+#### 1.2.9. Học viên xem tổng học phí
+#### 1.2.10. Tìm kiếm các lớp đang mở của một môn
+### 1.3. Chức năng của giảng viên
+#### 1.3.1. Đăng nhập vào hệ thống
+#### 1.3.2. Xem danh sách lớp dạy
+#### 1.3.3. Xem danh sách học viên của lớp đang dạy
+#### 1.3.4. Gửi để xuất mở lớp
+## 2. Entity-Relationship Diagram (ERD)
 ![ERD Diagram](https://github.com/noobpisces/DBMS_Project/blob/master/Database-Management-System-master/ERD_DoAn-v0.4.2.png)
-## 1.2 Relational Schemas
+## 3. Relational Schemas
 
 - **HOCKI**(MaHocKy, NgayKhaiGiang, NgayBeGiang)
 - **KHOA**(MaKhoa, TenKhoa)
@@ -56,7 +56,7 @@
 - **YEUCAU**(MaGiangVien, MaMon, SoHocVienDuocDangKy)
 - **TAIKHOAN**(TaiKhoan, MatKhau)
 
-## Các ràng buộc cần có
+## 4. Các ràng buộc cần có
 
 | STT | BẢNG       | RÀNG BUỘC                                                                                       |
 |-----|------------|-------------------------------------------------------------------------------------------------|
@@ -71,8 +71,8 @@
 | 9   | YEUCAU     | Khoá chính (MaMon, MaGiangVien), NOT NULL SoHocVienDuocDangKy, Khoá ngoại MaGiangVien đến bảng GIANGVIEN, Khoá ngoại MaMon đến bảng MONHOC |
 | 10  | TAIKHOAN   | Khoá chính TaiKhoan                                                                             |
 
-## Cài đặt các CSDL và các ràng buộc
-### Tạo các bảng
+## 5. Cài đặt các CSDL và các ràng buộc
+### 5.1. Tạo các bảng
 ```sql
 CREATE TABLE HOCKY (
     MaHocKy CHAR(9) NOT NULL, --HK1_22-23, HK2_22-23,..
@@ -157,8 +157,8 @@ CREATE TABLE TAIKHOAN (
 );
 
 ```
-### Tạo các view
-#### Xem danh sách các lớp học phần sinh viên có thể đăng kí
+### 5.2. Tạo các view
+#### 5.2.1. Xem danh sách các lớp học phần sinh viên có thể đăng kí
 ```sql
 CREATE VIEW v_DSLopHoc AS
 SELECT lh.MaLop, mh.TenMonHoc, mh.SoTinChi, lh.Tiet, lh.Thu, p.MaPhong AS Phong, gv.HoTen AS 'Giảng viên', mh.MaKhoa, mh.MaMon, lh.SoHocVienDangKy, lh.MaHocKy
@@ -167,7 +167,7 @@ JOIN dbo.LOPHOC lh ON lh.MaMon = mh.MaMon
 JOIN dbo.GIANGVIEN gv ON lh.MaGiangVien = gv.MaGiangVien
 JOIN dbo.PHONGHOC p ON lh.MaPhong = p.MaPhong;
 ```
-#### Xem danh sách các môn đã đăng kí
+#### 5.2.2. Xem danh sách các môn đã đăng kí
 ```sql
 CREATE VIEW v_DSDaDangKi AS
 SELECT lh.MaLop, mh.TenMonHoc, mh.SoTinChi, lh.Tiet, lh.Thu, p.MaPhong AS Phong, gv.HoTen AS GiangVien, dk.MaHocVien, lh.MaMon
@@ -177,7 +177,7 @@ JOIN dbo.GIANGVIEN gv ON lh.MaGiangVien = gv.MaGiangVien
 JOIN dbo.PHONGHOC p ON lh.MaPhong = p.MaPhong
 JOIN dbo.DKMH dk ON dk.MaLop = lh.MaLop;
 ```
-#### Xem danh sách giảng viên nào dạy lớp nào
+#### 5.2.3. Xem danh sách giảng viên nào dạy lớp nào
 ```sql
 CREATE VIEW v_DSLopDay AS
 SELECT lh.MaGiangVien, mh.TenMonHoc, lh.MaLop, mh.MaMon, lh.Tiet, lh.Thu, lh.MaPhong AS Phong, lh.MaHocKy
@@ -185,7 +185,7 @@ FROM dbo.LOPHOC lh
 JOIN dbo.MONHOC mh ON mh.MaMon = lh.MaMon;
 
 ```
-#### Xem sinh viên nào đăng kí lớp nào
+#### 5.2.4. Xem sinh viên nào đăng kí lớp nào
 ```sql
 CREATE VIEW v_DSHV AS
 SELECT lh.MaLop, hv.MaHocVien, hv.HoTen
@@ -194,8 +194,8 @@ JOIN dbo.LOPHOC lh ON dk.MaLop = lh.MaLop
 JOIN dbo.HOCVIEN hv ON dk.MaHocVien = hv.MaHocVien;
 
 ```
-### Các trigger 
-#### Trigger ngăn chặn học viên đăng kí lớp học trùng lịch, môn, quá 35 tín chỉ hoặc lớp đã đủ số lượng sinh viên (mặc định là 75)
+### 5.3. Các trigger 
+#### 5.3.1. Trigger ngăn chặn học viên đăng kí lớp học trùng lịch, môn, quá 35 tín chỉ hoặc lớp đã đủ số lượng sinh viên (mặc định là 75)
 ```sql
 CREATE TRIGGER Trigger_TrungLichDangKyLop --Trigger ngăn chặn học viên đăng kí lớp học trùng lịch, môn, hoặc quá 35 tín chỉ
 ON DKMH
@@ -294,7 +294,7 @@ BEGIN
 END;
 
 ```
-#### Trigger ngăn trùng lịch học khi học viên chuyển lớp
+#### 5.3.2. Trigger ngăn trùng lịch học khi học viên chuyển lớp
 ```sql
 CREATE TRIGGER Trigger_TrungLichChuyenLop --Trigger ngăn trùng lịch học khi học viên chuyển lớp
 ON DKMH
@@ -378,7 +378,7 @@ BEGIN
 END;
 ```
 
-#### Trigger hỗ trợ người quản lý xem xét mở lớp học mới
+#### 5.3.3. Trigger hỗ trợ người quản lý xem xét mở lớp học mới
 ```sql
 CREATE TRIGGER Trigger_MoLop --Trigger hỗ trợ người quản lý xem xét mở lớp học mới
 ON LOPHOC
@@ -464,7 +464,7 @@ BEGIN
 END;
 
 ```
-#### 	Trigger hỗ trợ người quản lý xóa lớp không đủ điều kiện (có ít hơn 10 học viên đăng ký)
+#### 5.3.4. Trigger hỗ trợ người quản lý xóa lớp không đủ điều kiện (có ít hơn 10 học viên đăng ký)
 ```sql
 CREATE TRIGGER Trigger_XoaLopItHocVien --Trigger hỗ trợ người quản lý xóa lớp không đủ điều kiện
 ON LOPHOC
@@ -491,7 +491,7 @@ BEGIN
 END;
 
 ```
-#### Trigger hỗ trợ người quản lý xóa giảng viên
+#### 5.3.5. Trigger hỗ trợ người quản lý xóa giảng viên
 ```sql
 CREATE TRIGGER Trigger_XoaGV --Trigger hỗ trợ người quản lý xóa Giang vien (Chỉ xóa khi giảng viên đó ko dạy lớp nào)
 ON GIANGVIEN
@@ -512,7 +512,7 @@ BEGIN
 		END
 END;
 ```
-#### Trigger kiểm tra yêu cầu mở lớp của giảng viên
+#### 5.3.6. Trigger kiểm tra yêu cầu mở lớp của giảng viên
 ```sql
 CREATE TRIGGER Trigger_CheckYeuCau -- Trigger kiểm tra yêu cầu của giáo viên
 ON YEUCAU
@@ -535,7 +535,7 @@ BEGIN
 		END
 END;
 ```
-#### Trigger hỗ trợ admin tạo tài khoản
+#### 5.3.7. Trigger hỗ trợ admin tạo tài khoản
 ```sql
 CREATE TRIGGER Trigger_TaoTaiKhoan 
 ON TAIKHOAN
@@ -571,7 +571,7 @@ AS
 	END;
 
 ```
-#### Trigger hỗ trợ admin đổi mật khẩu
+#### 5.3.8. Trigger hỗ trợ admin đổi mật khẩu
 ```sql
 CREATE TRIGGER Trigger_DoiMatKhau 
 ON TAIKHOAN
@@ -601,9 +601,9 @@ AS
 	END;
 
 ```
-### TẠO USER VÀ PHÂN QUYỀN
+### 5.4. TẠO USER VÀ PHÂN QUYỀN
 Ứng với ba nhóm người dùng (người quản lý, giảng viên, học viên) là role riêng
-#### Đối với role người quản lý (admin) ta sử dụng server role sysadmin:
+#### 5.4.1. Đối với role người quản lý (admin) ta sử dụng server role sysadmin:
 -	Trigger tạo tài khoản
 ```sql
 CREATE TRIGGER Trigger_TaoTaiKhoan 
@@ -732,7 +732,7 @@ BEGIN
 END;
 
 ```
-#### Đối với role giảng viên
+#### 5.4.2. Đối với role giảng viên
 ```sql
 CREATE ROLE GV
 
@@ -766,7 +766,7 @@ DENY EXECUTE ON proc_Xoa_DKLopHoc TO GV;
 DENY EXECUTE ON proc_ChuyenLopHoc TO GV;
 DENY EXECUTE ON proc_TaoTK TO GV;
 ```
-#### Đối với role học viên
+#### 5.4.3. Đối với role học viên
 ```sql
 CREATE ROLE HV
 GRANT SELECT, INSERT, DELETE, UPDATE, REFERENCES ON DKMH TO HV
