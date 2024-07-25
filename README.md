@@ -9,7 +9,7 @@
    - [Chức năng của giảng viên](#13-chức-năng-của-giảng-viên)
 2. [Entity-Relationship Diagram (ERD)](#2-entity-relationship-diagram-erd)
 3. [Relational Schemas](#3-relational-schemas)
-4. [Các ràng buộc cần có](#4-c%C3%A1c-r%C3%A0ng-bu%E1%BB%91c-c%E1%BA%A7n-c%C3%B3)
+4. [Các ràng buộc cần có](#4-các-ràng-buộc-cần-có)
 5. [Cài đặt các CSDL và các ràng buộc](#5-c%C3%A0i-%C4%91%E1%BA%B7t-c%C3%A1c-csdl-v%C3%A0-c%C3%A1c-r%C3%A0ng-bu%E1%BB%91c)
    - [Tạo các bảng](#51-t%E1%BA%A1o-c%C3%A1c-b%E1%BA%A3ng)
    - [Tạo các view](#52-t%E1%BA%A1o-c%C3%A1c-view)
