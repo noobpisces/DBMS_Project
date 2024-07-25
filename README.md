@@ -1,6 +1,6 @@
 # Hệ thống quản lý môn học - DBMS Project
 ### (Project thực hành về SQL, hệ quản trị cở sở dữ liệu SQL server)
-### (Tất cả SQL Script đều có trong link [DBMS Project - Query Directory](https://github.com/noobpisces/DBMS_Project/tree/master/Database-Management-System-master/Query), các sql script bên dưới chỉ là một phần nhỏ)
+### (Tất cả code SQL đều có trong link [DBMS Project - Query Directory](https://github.com/noobpisces/DBMS_Project/tree/master/Database-Management-System-master/Query))
 
 ## Các chức năng có trong project
 ### Chức năng của người quản lý
