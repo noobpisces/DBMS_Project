@@ -14,7 +14,7 @@
    - [Tạo các bảng](#51-t%E1%BA%A1o-c%C3%A1c-b%E1%BA%A3ng)
    - [Tạo các view](#52-t%E1%BA%A1o-c%C3%A1c-view)
    - [Các trigger](#53-c%C3%A1c-trigger)
-     	- [Trigger ngăn chặn học viên đăng kí lớp học trùng lịch, môn, quá 35 tín chỉ hoặc lớp đã đủ số lượng sinh viên (mặc định là 75)](#531-trigger-ngăn-chặn-học-viên-đăng-kí-lớp-học-trùng-lịch-môn-quá-35-tín-chỉ-hoặc-lớp-đã-đủ-số-lượng-sinh-vien-mặc-định-là-75)
+     	- [Trigger ngăn chặn học viên đăng kí lớp học trùng lịch, môn, quá 35 tín chỉ hoặc lớp đã đủ số lượng sinh viên (mặc định là 75)](#531-trigger-ngăn-chặn-học-viên-đăng-kí-lớp-học-trùng-lịch-môn-quá-35-tín-chỉ-hoặc-lớp-đã-đủ-số-lượng-sinh-viên-mặc-định-là-75)
      	- [Trigger ngăn trùng lịch học khi học viên chuyển lớp](#532-trigger-ngăn-trùng-lịch-học-khi-học-viên-chuyển-lớp)
     	- [Trigger hỗ trợ người quản lý xem xét mở lớp học mới](#533-trigger-hỗ-trợ-người-quản-lý-xem-xét-mở-lớp-học-mới)
      	- [Trigger hỗ trợ người quản lý xóa lớp không đủ điều kiện (có ít hơn 10 học viên đăng ký)](#534-trigger-hỗ-trợ-người-quản-lý-xóa-lớp-không-đủ-điều-kiện-có-ít-hơn-10-học-viên-đăng-ký)
