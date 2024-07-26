@@ -1,0 +1,281 @@
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.AssemblyReference.cache
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.ResolveComReference.cache
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormDSLopHoc.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.FormLogIn.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.Properties.Resources.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.GenerateResource.cache
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.CoreCompileInputs.cache
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_GiangVien.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHocPhi.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHVDangKyLopHoc.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_HocVien.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_GiangVien.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_HocVien.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_LopHoc.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.ChucNangGiangVien.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DanhSachHocVien.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DeXuat.resources
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe.config
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.pdb
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.exe
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.pdb
+D:\Code\HQTCSDL\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_LopHoc.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe.config
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.pdb
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.AssemblyReference.cache
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.ResolveComReference.cache
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_GiangVien.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_HocVien.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_GiangVien.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_HocVien.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_LopHoc.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_LopHoc.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.ChucNangGiangVien.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DanhSachHocVien.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DeXuat.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormDSLopHoc.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHocPhi.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHVDangKyLopHoc.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.FormLogIn.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.Properties.Resources.resources
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.GenerateResource.cache
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.CoreCompileInputs.cache
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.exe
+C:\DBMS\code\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.pdb
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe.config
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.pdb
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.AssemblyReference.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.SuggestedBindingRedirects.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.ResolveComReference.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_GiangVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_HocVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_GiangVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_HocVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_LopHoc.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_LopHoc.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.ChucNangGiangVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DanhSachHocVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DeXuat.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormDSLopHoc.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHocPhi.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHVDangKyLopHoc.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.FormLogIn.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.Properties.Resources.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.GenerateResource.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.CoreCompileInputs.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.exe
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.pdb
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe.config
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.pdb
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.AssemblyReference.cache
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.SuggestedBindingRedirects.cache
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.ResolveComReference.cache
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_GiangVien.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_HocVien.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_GiangVien.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_HocVien.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_LopHoc.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_LopHoc.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.ChucNangGiangVien.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DanhSachHocVien.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DeXuat.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormDSLopHoc.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHocPhi.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHVDangKyLopHoc.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.FormLogIn.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.Properties.Resources.resources
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.GenerateResource.cache
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.CoreCompileInputs.cache
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.exe
+D:\HK1-2023-2024\Hệ_QT_CSDL\DoAn-071123 (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.pdb
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.AssemblyReference.cache
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.ResolveComReference.cache
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_GiangVien.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_HocVien.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_GiangVien.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_HocVien.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_LopHoc.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_LopHoc.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.ChucNangGiangVien.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DanhSachHocVien.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DeXuat.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormDSLopHoc.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHocPhi.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHVDangKyLopHoc.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.FormLogIn.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.Properties.Resources.resources
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.GenerateResource.cache
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.CoreCompileInputs.cache
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.exe
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.pdb
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe.config
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.pdb
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_Create_ACCcs.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe.config
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.pdb
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.AssemblyReference.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.SuggestedBindingRedirects.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.ResolveComReference.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_Create_ACCcs.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_GiangVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_HocVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_GiangVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_HocVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_LopHoc.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_LopHoc.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.ChucNangGiangVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DanhSachHocVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DeXuat.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormDSLopHoc.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHocPhi.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHVDangKyLopHoc.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.FormLogIn.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.Properties.Resources.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.GenerateResource.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.CoreCompileInputs.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.exe
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.pdb
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe.config
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.pdb
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.AssemblyReference.cache
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.ResolveComReference.cache
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_Create_ACCcs.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_GiangVien.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_HocVien.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_GiangVien.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_HocVien.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_LopHoc.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_LopHoc.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.ChucNangGiangVien.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DanhSachHocVien.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DeXuat.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormDSLopHoc.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHocPhi.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHVDangKyLopHoc.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.FormLogIn.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.Properties.Resources.resources
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.GenerateResource.cache
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.CoreCompileInputs.cache
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.exe
+C:\Users\hihia\Downloads\DoAn-071123 (1) (1)\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.pdb
+C:\DBMS\code\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Doi_MatKhau.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\Do_An_winform\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Doi_MatKhau.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.AssemblyReference.cache
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.ResolveComReference.cache
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_GiangVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_HocVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_GiangVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_HocVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_LopHoc.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_LopHoc.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.ChucNangGiangVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DanhSachHocVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DeXuat.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormDSLopHoc.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHocPhi.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHVDangKyLopHoc.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.FormLogIn.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.Properties.Resources.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.GenerateResource.cache
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.CoreCompileInputs.cache
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.exe
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.pdb
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe.config
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.pdb
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_TaoTaiKhoan.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\Offical\DoAn-071123 (1) (1)\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.DoiMatKhau.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe.config
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.pdb
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.AssemblyReference.cache
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.ResolveComReference.cache
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_TaoTaiKhoan.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_GiangVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_HocVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_GiangVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_HocVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_LopHoc.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_LopHoc.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.DoiMatKhau.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.ChucNangGiangVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DanhSachHocVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DeXuat.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormDSLopHoc.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHocPhi.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHVDangKyLopHoc.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.FormLogIn.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.Properties.Resources.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.GenerateResource.cache
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.CoreCompileInputs.cache
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.exe
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-171123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.pdb
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe.config
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.pdb
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.AssemblyReference.cache
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.ResolveComReference.cache
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_TaoTaiKhoan.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_GiangVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_HocVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_GiangVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_HocVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_LopHoc.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_LopHoc.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.DoiMatKhau.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.ChucNangGiangVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DanhSachHocVien.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DeXuat.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormDSLopHoc.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHocPhi.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHVDangKyLopHoc.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.FormLogIn.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.Properties.Resources.resources
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.GenerateResource.cache
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.CoreCompileInputs.cache
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.exe
+D:\Study UTE\3 - Hoc ki 1\He quan tri co so du lieu\DoAn-191123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.pdb
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe.config
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.exe
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\bin\Debug\DANG_KY_MON_HOC.pdb
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.AssemblyReference.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.SuggestedBindingRedirects.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.ResolveComReference.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_TaoTaiKhoan.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_GiangVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_HocVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_GiangVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_HocVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Info_LopHoc.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.Admin.Admin_LopHoc.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.DoiMatKhau.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.ChucNangGiangVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DanhSachHocVien.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.GiangVien.DeXuat.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormDSLopHoc.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHocPhi.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.GUI.FormHVDangKyLopHoc.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.FormLogIn.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.Properties.Resources.resources
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.GenerateResource.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.csproj.CoreCompileInputs.cache
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.exe
+C:\Users\VICTUS\Desktop\Hệ QT CSDL\DoAn-211123\DANG_KY_MON_HOC\obj\Debug\DANG_KY_MON_HOC.pdb
