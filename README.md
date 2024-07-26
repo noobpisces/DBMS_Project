@@ -1,5 +1,5 @@
 # Hệ thống đăng kí môn học - DBMS Project
-### (Project thực hành về SQL, hệ quản trị cở sở dữ liệu SQL server, Dùng WinForms để cung cấp giao diện người dùng )
+### (Project thực hành về SQL, hệ quản trị cở sở dữ liệu SQL server, Dùng WinForms ([code ở đây](https://github.com/noobpisces/DBMS_Project/tree/master/DANG_KY_MON_HOC))để cung cấp giao diện người dùng )
 ### (Tất cả code SQL đều có trong link [DBMS Project - Query Directory](https://github.com/noobpisces/DBMS_Project/tree/master/Database-Management-System-master/Query))
 # Mục Lục
 
