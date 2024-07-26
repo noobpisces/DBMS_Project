@@ -5,7 +5,7 @@
 
 1. [Các chức năng có trong project](#1-c%C3%A1c-ch%E1%BB%A9c-n%C4%83ng-c%C3%B3-trong-project)
    - [Chức năng của người quản lý](#11-ch%E1%BB%A9c-n%C4%83ng-c%E1%BB%A7a-ng%C6%B0%E1%BB%9Di-qu%E1%BA%A3n-l%C3%BD)
-     	- [Kiểm tra tài khoản mật khẩu của người quản lý](#111-kiểm-tra-tài-khoản-mật-khẩu-người-quản-lý)
+     	- [Kiểm tra tài khoản mật khẩu của người quản lý](#111-kiểm-tra-tài-khoản-mật-khẩu-của-người-quản-lý)
      	- [Tạo tài khoản](#112-tạo-tài-khoản)
       	- [Đổi mật khẩu](#113-đổi-mật-khẩu)
       - [Quản lý giảng viên](#114-quản-lý-giảng-viên)
@@ -41,7 +41,7 @@
       - [Đăng nhập vào hệ thống](#131-đăng-nhập-vào-hệ-thống)
       - [Xem danh sách lớp dạy](#132-xem-danh-sách-lớp-dạy)
       - [Xem danh sách học viên của lớp đang dạy](#133-xem-danh-sách-học-viên-của-lớp-đang-dạy)
-      - [Gửi đề xuất mở lớp](#134-gửi-đề-xuất-mở-lớp)
+      - [Gửi đề xuất mở lớp](#134-gửi-để-xuất-mở-lớp)
 2. [Entity-Relationship Diagram (ERD)](#2-entity-relationship-diagram-erd)
 3. [Relational Schemas](#3-relational-schemas)
 4. [Các ràng buộc cần có](#4-các-ràng-buộc-cần-có)
