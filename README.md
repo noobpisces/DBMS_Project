@@ -10,7 +10,7 @@
 2. [Entity-Relationship Diagram (ERD)](#2-entity-relationship-diagram-erd)
 3. [Relational Schemas](#3-relational-schemas)
 4. [Các ràng buộc cần có](#4-các-ràng-buộc-cần-có)
-5. [Cài đặt các CSDL và các ràng buộc](#5-cài-đặt-các-csdl-và-các-ràng-buốc)
+5. [Cài đặt các CSDL và các ràng buộc](#5-cài-đặt-các-csdl-và-các-ràng-buộc)
    - [Tạo các bảng](#51-t%E1%BA%A1o-c%C3%A1c-b%E1%BA%A3ng)
    - [Tạo các view](#52-t%E1%BA%A1o-c%C3%A1c-view)
    - [Các trigger](#53-c%C3%A1c-trigger)
