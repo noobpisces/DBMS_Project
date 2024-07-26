@@ -5,6 +5,8 @@
 
 1. [Các chức năng có trong project](#1-c%C3%A1c-ch%E1%BB%A9c-n%C4%83ng-c%C3%B3-trong-project)
    - [Chức năng của người quản lý](#11-ch%E1%BB%A9c-n%C4%83ng-c%E1%BB%A7a-ng%C6%B0%E1%BB%9Di-qu%E1%BA%A3n-l%C3%BD)
+     	-
+     	-
    - [Chức năng của học viên](#12-ch%E1%BB%A9c-n%C4%83ng-c%E1%BB%A7a-h%E1%BB%8Dc-vi%C3%AAn)
    - [Chức năng của giảng viên](#13-chức-năng-của-giảng-viên)
 2. [Entity-Relationship Diagram (ERD)](#2-entity-relationship-diagram-erd)
@@ -29,42 +31,684 @@
 ### (Đa số code SQL các chức năng này đều trong [DBMS Project - Query Directory/Procedure](https://github.com/noobpisces/DBMS_Project/blob/master/Database-Management-System-master/Query/5_PROCEDURE.sql))
 ### 1.1. Chức năng của người quản lý
 #### 1.1.1. Kiểm tra tài khoản mật khẩu của người quản lý
+```sql
+CREATE FUNCTION [dbo].[fu_Check_DangNhap_ADMIN](@user NVARCHAR(50), @pass NVARCHAR(50))
+RETURNS FLOAT
+AS 
+BEGIN
+    DECLARE @result FLOAT;
+	IF EXISTS (SELECT (1) FROM TAIKHOAN WHERE TaiKhoan = @user
+											AND MatKhau = @pass  
+											AND @user NOT IN (SELECT MaHocVien FROM HOCVIEN)
+											AND @user NOT IN (SELECT MaGiangVien FROM GIANGVIEN))
+	BEGIN
+		SET @result = 1
+	END
+	ELSE SET @result = 0
+	RETURN @result
+END;
+```
 #### 1.1.2. Tạo tài khoản
+```sql
+CREATE PROCEDURE proc_TaoTK(@TaiKhoan NVARCHAR(20), @MatKhau NVARCHAR(20))
+AS
+BEGIN
+	INSERT INTO TaiKhoan(TaiKhoan, MatKhau) VALUES (@TaiKhoan, @MatKhau)
+END;
+```
 #### 1.1.3. Đổi mật khẩu
+```sql
+CREATE PROCEDURE proc_DoiMK(@TaiKhoan NVARCHAR(20), @MatKhauCu NVARCHAR(20), @MatKhauMoi NVARCHAR(20))
+AS
+BEGIN
+	UPDATE TAIKHOAN
+	SET TaiKhoan = @TaiKhoan, MatKhau = @MatKhauMoi
+	WHERE TaiKhoan = @TaiKhoan AND MatKhau = @MatKhauCu
+END;
+```
 #### 1.1.4. Quản lý giảng viên
 ##### a. Hiển thị danh sách thông tin giảng viên
+```sql
+CREATE FUNCTION fu_load_GV( ) 
+RETURNS TABLE 
+AS RETURN (
+	SELECT MaGiangVien, HoTen, HocVi, HocHam, Diachi, Sdt, MaKhoa, MatKhau 
+	FROM GIANGVIEN LEFT JOIN TAIKHOAN ON TaiKhoan = MaGiangVien
+);
+```
 ##### b. Tìm kiếm thông tin một giảng viên
+```sql
+CREATE FUNCTION [dbo].[func_getGiangVienByMaGiangVien] (@maGiangVien CHAR(6))
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT MaGiangVien, HoTen, HocVi, HocHam, Diachi, Sdt, MaKhoa, MatKhau  
+	FROM GIANGVIEN LEFT JOIN TAIKHOAN ON TaiKhoan = MaGiangVien
+    WHERE MaGiangVien = @maGiangVien
+);
+```
 ##### c. Xoá thông tin một giảng viên
+```sql
+CREATE PROCEDURE DeleteGiangVien
+    @MaGiangVien CHAR(6)
+AS
+BEGIN
+BEGIN TRANSACTION
+	DECLARE @username VARCHAR(15);
+	SELECT @username = MaGiangVien FROM GIANGVIEN WHERE MaGiangVien = @MaGiangVien
+	DECLARE @sql VARCHAR(100)
+	DECLARE @SessionID INT;
+	SELECT @SessionID = session_id
+	FROM sys.dm_exec_sessions
+	WHERE login_name = @username;
+	IF @SessionID IS NOT NULL
+		BEGIN
+			SET @sql = 'KILL ' + CONVERT(NVARCHAR(20), @SessionID)
+			EXEC(@sql)
+		END
+	
+	BEGIN TRY
+		DELETE FROM GIANGVIEN
+		WHERE MaGiangVien = @MaGiangVien;
+		DELETE FROM TAIKHOAN 
+		WHERE TaiKhoan = @MaGiangVien
+		SET @sql = 'DROP USER '+ @username
+		EXEC (@sql)
+
+		SET @sql = 'DROP LOGIN '+ @username
+		EXEC (@sql)
+		COMMIT TRAN
+	END TRY
+	BEGIN CATCH
+		ROLLBACK
+		DECLARE @err NVARCHAR(MAX)
+		SELECT @err = N'Lỗi ' + ERROR_MESSAGE()
+		RAISERROR(@err, 16, 1)
+	END CATCH
+END;
+```
 ##### d. Thêm một giảng viên
+```sql
+CREATE PROCEDURE [dbo].[InsertGiangVien]
+	@MaGiangVien CHAR(6),
+	@HoTen NVARCHAR(MAX),
+	@HocVi NVARCHAR(10),
+	@HocHam NVARCHAR(12),
+	@DiaChi NVARCHAR(MAX),
+	@Sdt CHAR(10),
+	@MaKhoa VARCHAR(5)
+AS
+BEGIN
+	IF EXISTS (SELECT 1 FROM GIANGVIEN WHERE MaGiangVien = @MaGiangVien)
+	BEGIN
+			DECLARE @err NVARCHAR(MAX)
+			SELECT @err = N'Giảng viên đã có trong cơ sở dữ liệu'
+			RAISERROR(@err, 16, 1)
+	END
+	ELSE
+	BEGIN
+		INSERT INTO GIANGVIEN (MaGiangVien, HoTen, HocVi, HocHam, DiaChi, Sdt, MaKhoa)
+		VALUES (@MaGiangVien, @HoTen, @HocVi, @HocHam, @DiaChi, @Sdt, @MaKhoa);
+	END
+END;
+```
 ##### e. Cập nhật thông tin một giảng viên
+```sql
+CREATE PROCEDURE [dbo].[UpdateGiangVien]
+	@MaGiangVien CHAR(6),
+	@HoTen NVARCHAR(MAX),
+	@HocVi NVARCHAR(10),
+	@HocHam NVARCHAR(12),
+	@DiaChi NVARCHAR(MAX),
+	@Sdt CHAR(10),
+	@MaKhoa VARCHAR(5),
+	@MatKhau VARCHAR(20)
+AS
+BEGIN
+	BEGIN TRY
+		BEGIN TRANSACTION;
+
+		IF EXISTS (SELECT 1 FROM GIANGVIEN WHERE MaGiangVien = @MaGiangVien)
+		BEGIN
+			UPDATE GIANGVIEN
+			SET
+				HoTen = @HoTen,
+				HocVi = @HocVi,
+				HocHam = @HocHam,
+				DiaChi = @DiaChi,
+				Sdt = @Sdt,
+				MaKhoa = @MaKhoa,
+				MatKhau = @MatKhau
+			WHERE MaGiangVien = @MaGiangVien;
+		END
+		ELSE
+		BEGIN
+			RAISERROR(N'Giảng viên với mã giảng viên không tồn tại.', 16, 1);
+		END
+
+		COMMIT TRANSACTION;
+	END TRY
+	BEGIN CATCH
+		IF @@TRANCOUNT > 0
+			ROLLBACK TRANSACTION;
+
+		DECLARE @err NVARCHAR(MAX);
+		SELECT @err = N'Lỗi ' + ERROR_MESSAGE();
+		RAISERROR(@err, 16, 1);
+	END CATCH
+END;
+```
 #### 1.1.5. Quản lý học viên
 ##### a. Hiển thị danh sách thông tin học viên
+```sql
+CREATE FUNCTION fu_load_HocVien ( )
+RETURNS TABLE 
+AS RETURN (
+	SELECT MaHocVien, HoTen, NgaySinh, DiaChi, QueQuan, MaKhoa, MatKhau
+	FROM HOCVIEN LEFT JOIN TAIKHOAN ON MaHocVien = TaiKhoan
+);
+```
 ##### b. Tìm kiếm thông tin một học viên
+```sql
+CREATE FUNCTION [dbo].[func_getHocVienByMaHocVien] (@maHocVien CHAR(10))
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT MaHocVien, HoTen, NgaySinh, DiaChi, QueQuan, MaKhoa, MatKhau
+	FROM HOCVIEN LEFT JOIN TAIKHOAN ON MaHocVien = TaiKhoan
+    WHERE MaHocVien = @maHocVien
+);
+```
 ##### c. Xoá thông tin một học viên
+```sql
+CREATE PROCEDURE DeleteHocVien
+    @MaHocVien CHAR(10)
+AS
+BEGIN
+		BEGIN TRANSACTION
+			DECLARE @username VARCHAR(15);
+			SELECT @username = MaHocVien FROM HOCVIEN WHERE MaHocVien = @MaHocVien
+			DECLARE @sql VARCHAR(100)
+			DECLARE @SessionID INT;
+			SELECT @SessionID = session_id
+			FROM sys.dm_exec_sessions
+			WHERE login_name = @username;
+			IF @SessionID IS NOT NULL
+			BEGIN
+				SET @sql = 'KILL ' + CONVERT(NVARCHAR(20), @SessionID)
+				EXEC(@sql)
+			END
+    
+		BEGIN TRY
+			UPDATE LOPHOC
+			SET LOPHOC.SoHocVienDangKy = LOPHOC.SoHocVienDangKy - 1
+			WHERE MaLop IN (SELECT MaLop FROM DKMH WHERE MaHocVien = @MaHocVien);
+        -- Xóa dòng dữ liệu có chứa @MaHocVien trong bảng DKMH
+			DELETE FROM DKMH
+			WHERE MaHocVien = @MaHocVien;
+        -- Xóa học viên từ bảng HOCVIEN
+			DELETE FROM HOCVIEN
+			WHERE MaHocVien = @MaHocVien;
+		----
+			DELETE FROM TAIKHOAN
+			WHERE taikhoan = @MaHocVien
+			SET @sql = 'DROP USER ' + @username
+			EXEC (@sql)
+
+			SET @sql = 'DROP LOGIN ' + @username
+			EXEC (@sql)
+
+			COMMIT;
+		END TRY
+		BEGIN CATCH
+		 -- Nếu có lỗi, hủy giao dịch và hiển thị thông báo lỗi
+			ROLLBACK;
+			DECLARE @err NVARCHAR(MAX)
+			SELECT @err = N'Không thể xóa, kiểm tra lại mã học viên'
+			RAISERROR(@err, 16, 1)
+		END CATCH;
+END;
+```
 ##### d. Thêm một học viên
+```sql
+CREATE PROCEDURE [dbo].[InsertHocVien]
+    @MaHocVien CHAR(10),
+    @HoTen NVARCHAR(40),
+    @NgaySinh DATE,
+    @DiaChi NVARCHAR(MAX),
+    @QueQuan NVARCHAR(20),
+    @MaKhoa VARCHAR(5)
+AS
+BEGIN
+    IF EXISTS (SELECT 1 FROM HOCVIEN WHERE MaHocVien = @MaHocVien)
+    BEGIN
+        DECLARE @err NVARCHAR(MAX)
+		SELECT @err = N'Học viên đã tồn tại trong cơ sở dữ liệu' 
+		RAISERROR(@err, 16, 1)
+    END
+	ELSE
+	BEGIN
+		INSERT INTO HOCVIEN (MaHocVien, HoTen, NgaySinh, DiaChi, QueQuan, MaKhoa)
+		VALUES (@MaHocVien, @HoTen, @NgaySinh, @DiaChi, @QueQuan, @MaKhoa);
+	END
+END;
+```
 ##### e. Cập nhật thông tin một học viên
+```sql
+CREATE PROCEDURE [dbo].[UpdateHocVien]
+    @MaHocVien CHAR(10),
+    @HoTen NVARCHAR(MAX),
+    @NgaySinh DATE,
+    @DiaChi NVARCHAR(MAX),
+    @QueQuan NVARCHAR(20),
+    @MaKhoa VARCHAR(5)
+AS
+BEGIN
+    BEGIN TRY
+        BEGIN TRANSACTION;
+
+        IF EXISTS (SELECT 1 FROM HOCVIEN WHERE MaHocVien = @MaHocVien)
+        BEGIN
+            UPDATE HOCVIEN
+            SET
+                HoTen = @HoTen,
+                NgaySinh = @NgaySinh,
+                DiaChi = @DiaChi,
+                QueQuan = @QueQuan,
+                MaKhoa = @MaKhoa
+            WHERE MaHocVien = @MaHocVien;
+        END
+        ELSE
+        BEGIN
+            RAISERROR(N'!', 16, 1);
+        END
+
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        IF @@TRANCOUNT > 0
+            ROLLBACK TRANSACTION;
+
+        DECLARE @err NVARCHAR(MAX);
+        SELECT @err = N'Học viên với mã học viên đã tồn tại' + ERROR_MESSAGE();
+        RAISERROR(@err, 16, 1);
+    END CATCH
+END;
+```
 #### 1.1.6. Quản lý lớp học
 ##### a. Hiển thị danh sách thông tin lớp học
+```sql
+CREATE FUNCTION [dbo].[DanhSachLopHoc] ( )
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT MaLop, TenLop, MaGiangVien, MaMon, MaHocKy, SoHocVienDangKy, MaPhong, Thu, Tiet
+    FROM LOPHOC
+);
+```
 ##### b. Tìm kiếm thông tin một lớp học
+```sql
+CREATE FUNCTION [dbo].[DanhSachLopHoc] ( )
+RETURNS TABLE
+AS
+RETURN
+(
+    SELECT MaLop, TenLop, MaGiangVien, MaMon, MaHocKy, SoHocVienDangKy, MaPhong, Thu, Tiet
+    FROM LOPHOC
+);
+```
 ##### c. Xoá thông tin một lớp học
+```sql
+CREATE PROCEDURE [dbo].[XoaLopHoc]
+    @MaLop CHAR(18)
+AS
+BEGIN
+	BEGIN TRANSACTION 
+		BEGIN TRY
+			DELETE FROM DKMH
+			WHERE MaLop = @MaLop
+
+			DELETE FROM LOPHOC
+			WHERE MaLop = @MaLop;
+		COMMIT TRAN
+		END TRY
+		BEGIN CATCH
+			ROLLBACK
+			DECLARE @err NVARCHAR(MAX)
+			SELECT @err = N'Lỗi ' + ERROR_MESSAGE()
+			RAISERROR(@err, 16, 1)
+		END CATCH
+END;
+```
 ##### d. Thêm một lớp học
+```sql
+CREATE PROCEDURE [dbo].[ThemLopHoc]
+    @MaLop CHAR(18),
+    @TenLop NVARCHAR(MAX),
+    @MaGiangVien CHAR(6),
+    @MaMon CHAR(10),
+    @MaHocKy CHAR(9),
+    @SoHocVienDangKy INT,
+    @MaPhong VARCHAR(10),
+    @Thu NVARCHAR(10),
+    @Tiet VARCHAR(10)
+AS
+BEGIN
+    INSERT INTO LOPHOC (MaLop, TenLop, MaGiangVien, MaMon, MaHocKy, SoHocVienDangKy, MaPhong, Thu, Tiet)
+    VALUES (@MaLop, @TenLop, @MaGiangVien, @MaMon, @MaHocKy, @SoHocVienDangKy, @MaPhong, @Thu, @Tiet);
+END;
+```
 ##### e. Cập nhật thông tin một lớp học
+```sql
+CREATE PROCEDURE [dbo].[UpdateLopHoc]
+    @MaLop CHAR(18),
+    @TenLop NVARCHAR(50),
+    @MaGiangVien CHAR(10),
+    @MaMon CHAR(10),
+    @MaHocKy CHAR(10),
+    @SoHocVienDangKy INT,
+    @MaPhong CHAR(10),
+    @Thu NVARCHAR(10),
+    @Tiet NVARCHAR(50)
+AS
+BEGIN
+    BEGIN TRY
+        BEGIN TRANSACTION;
+
+        IF EXISTS (SELECT 1 FROM LOPHOC WHERE MaLop = @MaLop)
+        BEGIN
+            UPDATE LOPHOC
+            SET
+                TenLop = @TenLop,
+                MaGiangVien = @MaGiangVien,
+                MaMon = @MaMon,
+                MaHocKy = @MaHocKy,
+                SoHocVienDangKy = @SoHocVienDangKy,
+                MaPhong = @MaPhong,
+                Thu = @Thu,
+                Tiet = @Tiet
+            WHERE MaLop = @MaLop;
+        END
+        ELSE
+        BEGIN
+            RAISERROR(N'Lớp học với mã lớp = %s không tồn tại.', 16, 1, @MaLop);
+        END
+
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        IF @@TRANCOUNT > 0
+            ROLLBACK TRANSACTION;
+
+        DECLARE @err NVARCHAR(MAX);
+        SELECT @err = N'Lỗi ' + ERROR_MESSAGE();
+        RAISERROR(@err, 16, 1);
+    END CATCH
+END;
+```
 ### 1.2. Chức năng của học viên
 #### 1.2.1. Đăng nhập vào hệ thống
+```sql
+CREATE PROCEDURE proc_HV_DN
+	@TaiKhoan CHAR(10),
+	@MatKhau CHAR(18)
+AS
+BEGIN
+	IF EXISTS (SELECT 1 FROM TAIKHOAN, HOCVIEN WHERE TaiKhoan = @TaiKhoan and MatKhau = @MatKhau and MaHocVien = @TaiKhoan)
+	BEGIN
+		SELECT HoTen, MaKhoa 
+		FROM HOCVIEN 
+		WHERE MaHocVien = @TaiKHoan
+	END
+	ELSE 
+	BEGIN
+		DECLARE @err NVARCHAR(MAX)
+		SELECT @err = N'Sai Tài khoản hoặc Mật khẩu'
+		RAISERROR(@err, 16, 1)
+	END
+END;
+```
 #### 1.2.2. Xem các môn có thể đăng kí
+```sql
+CREATE PROCEDURE proc_HV_DN
+	@TaiKhoan CHAR(10),
+	@MatKhau CHAR(18)
+AS
+BEGIN
+	IF EXISTS (SELECT 1 FROM TAIKHOAN, HOCVIEN WHERE TaiKhoan = @TaiKhoan and MatKhau = @MatKhau and MaHocVien = @TaiKhoan)
+	BEGIN
+		SELECT HoTen, MaKhoa 
+		FROM HOCVIEN 
+		WHERE MaHocVien = @TaiKHoan
+	END
+	ELSE 
+	BEGIN
+		DECLARE @err NVARCHAR(MAX)
+		SELECT @err = N'Sai Tài khoản hoặc Mật khẩu'
+		RAISERROR(@err, 16, 1)
+	END
+END;
+```
 #### 1.2.3. Xem các môn đã đăng kí
+```sql
+CREATE VIEW v_DSDaDangKi AS
+SELECT lh.MaLop, mh.TenMonHoc, mh.SoTinChi, lh.Tiet, lh.Thu, p.MaPhong Phong, gv.HoTen AS GiangVien, dk.MaHocVien, lh.MaMon
+FROM dbo.MONHOC mh
+	JOIN dbo.LOPHOC lh ON lh.MaMon = mh.MaMon
+	JOIN dbo.GIANGVIEN gv ON lh.MaGiangVien = gv.MaGiangVien
+	JOIN dbo.PHONGHOC p ON  lh.MaPhong = p.MaPhong
+	JOIN dbo.DKMH dk ON dk.MaLop = lh.MaLop;
+```
 #### 1.2.4. Xem danh sách lớp của một môn
+```sql
+CREATE VIEW v_DSLopHoc AS
+SELECT lh.MaLop, mh.TenMonHoc, mh.SoTinChi, lh.Tiet, lh.Thu, p.MaPhong Phong, lh.MaHocKy, gv.HoTen AS 'Giảng viên', mh.MaKhoa, mh.MaMon, lh.SoHocVienDangKy
+FROM dbo.MONHOC mh
+	JOIN dbo.LOPHOC lh ON lh.MaMon = mh.MaMon
+	JOIN dbo.GIANGVIEN gv ON lh.MaGiangVien = gv.MaGiangVien
+	JOIN dbo.PHONGHOC p ON  lh.MaPhong = p.MaPhong;
+```
 #### 1.2.5. Học viên đăng ký lớp học
+```sql
+CREATE PROCEDURE proc_DKLopHoc --Học viên đăng ký lớp học
+	@MaHV CHAR(10),
+	@MaLH CHAR(18)
+AS
+BEGIN
+	BEGIN TRANSACTION 
+		BEGIN TRY
+			INSERT INTO DKMH (MaHocVien, MaLop)
+			VALUES(@MaHV,@MaLH)
+
+			UPDATE LOPHOC
+			SET LOPHOC.SoHocVienDangKy = LOPHOC.SoHocVienDangKy + 1
+			WHERE MaLop = @MaLH
+
+		COMMIT TRAN
+		END TRY
+		BEGIN CATCH
+			ROLLBACK
+			DECLARE @err NVARCHAR(MAX)
+			SELECT @err = N'Lỗi ' + ERROR_MESSAGE()
+			RAISERROR(@err, 16, 1)
+		END CATCH
+END;
+```
 #### 1.2.6. Học viên xóa đăng ký lớp học
+```sql
+CREATE PROCEDURE proc_Xoa_DKLopHoc --Học viên xoá đăng ký lớp học
+	@MaHV CHAR(10),
+	@MaLH CHAR(18)
+AS
+BEGIN
+	BEGIN TRANSACTION 
+		BEGIN TRY
+			DELETE FROM DKMH WHERE MaHocVien = @MaHV AND MaLop = @MaLH
+
+			UPDATE LOPHOC
+			SET LOPHOC.SoHocVienDangKy = LOPHOC.SoHocVienDangKy - 1
+			WHERE MaLop = @MaLH
+		COMMIT TRAN
+		END TRY
+		BEGIN CATCH
+			ROLLBACK
+			DECLARE @err NVARCHAR(MAX)
+			SELECT @err = N'Lỗi ' + ERROR_MESSAGE()
+			RAISERROR(@err, 16, 1)
+		END CATCH
+END;
+```
 #### 1.2.7. Học viên chuyển lớp
+```sql
+CREATE PROCEDURE proc_ChuyenLopHoc --Học viên chuyển lớp học
+	@MaHV CHAR(10),
+	@MaLH CHAR(18), --lớp học hiện tại
+	@MaLHDK CHAR(18) --lớp học đăng ký mới
+AS
+BEGIN
+	BEGIN TRANSACTION 
+		BEGIN TRY
+			UPDATE DKMH 
+			SET MaLop = @MaLHDK
+			WHERE MaHocVien = @MaHV and MaLop = @MaLH;
+
+			UPDATE LOPHOC
+			SET LOPHOC.SoHocVienDangKy = LOPHOC.SoHocVienDangKy - 1
+			WHERE MaLop = @MaLH
+			UPDATE LOPHOC
+			SET LOPHOC.SoHocVienDangKy = LOPHOC.SoHocVienDangKy + 1
+			WHERE MaLop = @MaLHDK
+
+		COMMIT TRAN
+		END TRY
+		BEGIN CATCH
+			ROLLBACK
+			DECLARE @err NVARCHAR(MAX)
+			SELECT @err = N'Lỗi ' + ERROR_MESSAGE()
+			RAISERROR(@err, 16, 1)
+		END CATCH
+END;
+
+```
 #### 1.2.8. Học viên xem danh sách học phí
+```sql
+CREATE FUNCTION fu_load_DSHocPhi (@MaHocVien CHAR(10), @MaKhoa VARCHAR(5)) --Hàm danh sách học phí
+RETURNS TABLE 
+AS 
+RETURN 
+(
+    SELECT lh.MaLop, mh.TenMonHoc, lh.Tiet, lh.Thu, p.MaPhong Phong, 
+           gv.HoTen AS GiangVien, dk.MaHocVien, lh.MaMon, mh.SoTinChi, 
+           CASE 
+               WHEN @MaKhoa = 'FHQ' THEN mh.SoTinChi * 800000
+               ELSE mh.SoTinChi * 600000
+           END AS HocPhi
+    FROM dbo.MONHOC mh
+    JOIN dbo.LOPHOC lh ON lh.MaMon = mh.MaMon
+    JOIN dbo.GIANGVIEN gv ON lh.MaGiangVien = gv.MaGiangVien
+    JOIN dbo.PHONGHOC p ON  lh.MaPhong = p.MaPhong
+    JOIN dbo.DKMH dk ON dk.MaLop = lh.MaLop
+    WHERE dk.MaHocVien = @MaHocVien
+);
+```
 #### 1.2.9. Học viên xem tổng học phí
+```sql
+CREATE FUNCTION [dbo].[fu_TongHocPhi](@MaHocVien NVARCHAR(10), @MaKhoa VARCHAR(5))
+RETURNS FLOAT
+AS 
+BEGIN
+    DECLARE @tinchi FLOAT;
+	DECLARE @HocPhi FLOAT;
+
+    -- Sử dụng SELECT để gán giá trị cho biến result
+    SELECT @tinchi = SUM(SoTinChi) FROM v_DSDaDangKi WHERE MaHocVien = @MaHocVien;
+
+    -- Nếu không có dữ liệu, gán giá trị mặc định cho biến result
+    IF (@tinchi IS NULL)
+        SET @tinchi = 0;
+
+    -- Trả về giá trị
+	IF ( @MaKhoa = 'FHQ')
+	BEGIN
+		SET @HocPhi = @tinchi * 800000
+	END
+	ELSE 
+		BEGIN
+			SET @HocPhi = @tinchi * 600000		
+		END
+    RETURN @HocPhi;
+END;
+```
 #### 1.2.10. Tìm kiếm các lớp đang mở của một môn
+```sql
+CREATE FUNCTION fu_load_DSTimKiem (@string NVARCHAR(50), @MaHocKy CHAR(9)) --Hàm load các lớp học cho học viên đăng ký
+RETURNS TABLE 
+AS RETURN (
+	SELECT * 
+	FROM v_DSLopHoc 
+	WHERE MaMon LIKE '%' + @string + '%' and MaHocKy = @MaHocKy
+);
+```
 ### 1.3. Chức năng của giảng viên
 #### 1.3.1. Đăng nhập vào hệ thống
+```sql
+CREATE PROCEDURE proc_GV_DN --Giảng viên đăng nhập
+	@TaiKhoan CHAR(10),
+	@MatKhau CHAR(18)
+AS
+BEGIN
+	IF EXISTS (SELECT 1 FROM TAIKHOAN, GIANGVIEN WHERE MaGiangVien = @TaiKhoan AND TaiKhoan = @TaiKhoan AND MatKhau = @MatKhau)
+	BEGIN
+		SELECT *
+		FROM GIANGVIEN 
+		WHERE MaGiangVien = @TaiKhoan
+	END
+	ELSE 
+	BEGIN
+		DECLARE @err NVARCHAR(MAX)
+		SELECT @err = N'Sai Tài khoản hoặc Mật khẩu'
+		RAISERROR(@err, 16, 1)
+	END
+END;
+```
 #### 1.3.2. Xem danh sách lớp dạy
+```sql
+CREATE VIEW v_DSLopDay AS
+SELECT lh.MaGiangVien, mh.TenMonHoc, lh.MaLop, mh.MaMon, lh.Tiet, lh.Thu, lh.MaPhong Phong,lh.MahocKy
+FROM dbo.LOPHOC lh 
+	JOIN dbo.MONHOC mh ON mh.MaMon = lh.MaMon;
+GO
+```
 #### 1.3.3. Xem danh sách học viên của lớp đang dạy
+```sql
+CREATE VIEW v_DSHV AS
+SELECT lh.MaLop, hv.MaHocVien, hv.HoTen
+FROM dbo.DKMH dk
+	JOIN dbo.LOPHOC lh ON dk.MaLop = lh.MaLop
+	JOIN dbo.HOCVIEN hv ON dk.MaHocVien = hv.MaHocVien;
+```
 #### 1.3.4. Gửi để xuất mở lớp
+``sql
+CREATE PROCEDURE proc_GuiYeuCau
+	@MaGiangVien CHAR(6),
+	@MaMon CHAR(10),
+	@SoHocVienDuocDangKy INT
+AS
+BEGIN
+BEGIN TRY
+	INSERT INTO YEUCAU (MaGiangVien, MaMon, SoHocVienDuocDangKy)
+	VALUES (@MaGiangVien, @MaMon, @SoHocVienDuocDangKy)
+END TRY
+BEGIN CATCH
+	DECLARE @err NVARCHAR(MAX)
+	SELECT @err = N'Lỗi ' + ERROR_MESSAGE()
+	RAISERROR(@err, 16, 1)
+END CATCH
+END;
+```
 ## 2. Entity-Relationship Diagram (ERD)
 ![ERD Diagram](https://github.com/noobpisces/DBMS_Project/blob/master/Database-Management-System-master/ERD_DoAn-v0.4.2.png)
 ## 3. Relational Schemas
