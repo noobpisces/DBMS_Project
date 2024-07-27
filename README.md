@@ -815,7 +815,7 @@ DENY EXECUTE ON proc_TaoTK TO HV;
 ##5. Các chức năng có trong project
 ### (Đa số code SQL các chức năng này đều trong [DBMS Project - Query Directory/Procedure](https://github.com/noobpisces/DBMS_Project/blob/master/Database-Management-System-master/Query/5_PROCEDURE.sql))
 ###5.1. Chức năng của người quản lý
-####5.1.1. Kiểm tra tài khoản mật khẩu của người quản lý
+#### 5.1.1. Kiểm tra tài khoản mật khẩu của người quản lý
 ```sql
 CREATE FUNCTION [dbo].[fu_Check_DangNhap_ADMIN](@user NVARCHAR(50), @pass NVARCHAR(50))
 RETURNS FLOAT
@@ -833,7 +833,7 @@ BEGIN
 	RETURN @result
 END;
 ```
-####5.1.2. Tạo tài khoản
+#### 5.1.2. Tạo tài khoản
 ```sql
 CREATE PROCEDURE proc_TaoTK(@TaiKhoan NVARCHAR(20), @MatKhau NVARCHAR(20))
 AS
@@ -851,7 +851,7 @@ BEGIN
 	WHERE TaiKhoan = @TaiKhoan AND MatKhau = @MatKhauCu
 END;
 ```
-####5.1.4. Quản lý giảng viên
+#### 5.1.4. Quản lý giảng viên
 ##### a. Hiển thị danh sách thông tin giảng viên
 ```sql
 CREATE FUNCTION fu_load_GV( ) 
@@ -984,7 +984,7 @@ BEGIN
 	END CATCH
 END;
 ```
-####5.1.5. Quản lý học viên
+#### 5.1.5. Quản lý học viên
 ##### a. Hiển thị danh sách thông tin học viên
 ```sql
 CREATE FUNCTION fu_load_HocVien ( )
@@ -1122,7 +1122,7 @@ BEGIN
     END CATCH
 END;
 ```
-####5.1.6. Quản lý lớp học
+#### 5.1.6. Quản lý lớp học
 ##### a. Hiển thị danh sách thông tin lớp học
 ```sql
 CREATE FUNCTION [dbo].[DanhSachLopHoc] ( )
@@ -1234,8 +1234,8 @@ BEGIN
     END CATCH
 END;
 ```
-###5.2. Chức năng của học viên
-####5.2.1. Đăng nhập vào hệ thống
+### 5.2. Chức năng của học viên
+#### 5.2.1. Đăng nhập vào hệ thống
 ```sql
 CREATE PROCEDURE proc_HV_DN
 	@TaiKhoan CHAR(10),
@@ -1256,7 +1256,7 @@ BEGIN
 	END
 END;
 ```
-####5.2.2. Xem các môn có thể đăng kí
+#### 5.2.2. Xem các môn có thể đăng kí
 ```sql
 CREATE PROCEDURE proc_HV_DN
 	@TaiKhoan CHAR(10),
@@ -1277,7 +1277,7 @@ BEGIN
 	END
 END;
 ```
-####5.2.3. Xem các môn đã đăng kí
+#### 5.2.3. Xem các môn đã đăng kí
 ```sql
 CREATE VIEW v_DSDaDangKi AS
 SELECT lh.MaLop, mh.TenMonHoc, mh.SoTinChi, lh.Tiet, lh.Thu, p.MaPhong Phong, gv.HoTen AS GiangVien, dk.MaHocVien, lh.MaMon
@@ -1287,7 +1287,7 @@ FROM dbo.MONHOC mh
 	JOIN dbo.PHONGHOC p ON  lh.MaPhong = p.MaPhong
 	JOIN dbo.DKMH dk ON dk.MaLop = lh.MaLop;
 ```
-####5.2.4. Xem danh sách lớp của một môn
+#### 5.2.4. Xem danh sách lớp của một môn
 ```sql
 CREATE VIEW v_DSLopHoc AS
 SELECT lh.MaLop, mh.TenMonHoc, mh.SoTinChi, lh.Tiet, lh.Thu, p.MaPhong Phong, lh.MaHocKy, gv.HoTen AS 'Giảng viên', mh.MaKhoa, mh.MaMon, lh.SoHocVienDangKy
@@ -1296,7 +1296,7 @@ FROM dbo.MONHOC mh
 	JOIN dbo.GIANGVIEN gv ON lh.MaGiangVien = gv.MaGiangVien
 	JOIN dbo.PHONGHOC p ON  lh.MaPhong = p.MaPhong;
 ```
-####5.2.5. Học viên đăng ký lớp học
+#### 5.2.5. Học viên đăng ký lớp học
 ```sql
 CREATE PROCEDURE proc_DKLopHoc --Học viên đăng ký lớp học
 	@MaHV CHAR(10),
@@ -1322,7 +1322,7 @@ BEGIN
 		END CATCH
 END;
 ```
-####5.2.6. Học viên xóa đăng ký lớp học
+#### 5.2.6. Học viên xóa đăng ký lớp học
 ```sql
 CREATE PROCEDURE proc_Xoa_DKLopHoc --Học viên xoá đăng ký lớp học
 	@MaHV CHAR(10),
@@ -1346,7 +1346,7 @@ BEGIN
 		END CATCH
 END;
 ```
-####5.2.7. Học viên chuyển lớp
+#### 5.2.7. Học viên chuyển lớp
 ```sql
 CREATE PROCEDURE proc_ChuyenLopHoc --Học viên chuyển lớp học
 	@MaHV CHAR(10),
@@ -1378,7 +1378,7 @@ BEGIN
 END;
 
 ```
-####5.2.8. Học viên xem danh sách học phí
+#### 5.2.8. Học viên xem danh sách học phí
 ```sql
 CREATE FUNCTION fu_load_DSHocPhi (@MaHocVien CHAR(10), @MaKhoa VARCHAR(5)) --Hàm danh sách học phí
 RETURNS TABLE 
@@ -1399,7 +1399,7 @@ RETURN
     WHERE dk.MaHocVien = @MaHocVien
 );
 ```
-####5.2.9. Học viên xem tổng học phí
+#### 5.2.9. Học viên xem tổng học phí
 ```sql
 CREATE FUNCTION [dbo].[fu_TongHocPhi](@MaHocVien NVARCHAR(10), @MaKhoa VARCHAR(5))
 RETURNS FLOAT
@@ -1427,7 +1427,7 @@ BEGIN
     RETURN @HocPhi;
 END;
 ```
-####5.2.10. Tìm kiếm các lớp đang mở của một môn
+#### 5.2.10. Tìm kiếm các lớp đang mở của một môn
 ```sql
 CREATE FUNCTION fu_load_DSTimKiem (@string NVARCHAR(50), @MaHocKy CHAR(9)) --Hàm load các lớp học cho học viên đăng ký
 RETURNS TABLE 
@@ -1437,8 +1437,8 @@ AS RETURN (
 	WHERE MaMon LIKE '%' + @string + '%' and MaHocKy = @MaHocKy
 );
 ```
-###5.3. Chức năng của giảng viên
-####5.3.1. Đăng nhập vào hệ thống
+### 5.3. Chức năng của giảng viên
+#### 5.3.1. Đăng nhập vào hệ thống
 ```sql
 CREATE PROCEDURE proc_GV_DN --Giảng viên đăng nhập
 	@TaiKhoan CHAR(10),
@@ -1459,7 +1459,7 @@ BEGIN
 	END
 END;
 ```
-####5.3.2. Xem danh sách lớp dạy
+#### 5.3.2. Xem danh sách lớp dạy
 ```sql
 CREATE VIEW v_DSLopDay AS
 SELECT lh.MaGiangVien, mh.TenMonHoc, lh.MaLop, mh.MaMon, lh.Tiet, lh.Thu, lh.MaPhong Phong,lh.MahocKy
@@ -1467,7 +1467,7 @@ FROM dbo.LOPHOC lh
 	JOIN dbo.MONHOC mh ON mh.MaMon = lh.MaMon;
 GO
 ```
-####5.3.3. Xem danh sách học viên của lớp đang dạy
+#### 5.3.3. Xem danh sách học viên của lớp đang dạy
 ```sql
 CREATE VIEW v_DSHV AS
 SELECT lh.MaLop, hv.MaHocVien, hv.HoTen
@@ -1475,7 +1475,7 @@ FROM dbo.DKMH dk
 	JOIN dbo.LOPHOC lh ON dk.MaLop = lh.MaLop
 	JOIN dbo.HOCVIEN hv ON dk.MaHocVien = hv.MaHocVien;
 ```
-####5.3.4. Gửi để xuất mở lớp
+#### 5.3.4. Gửi để xuất mở lớp
 ```sql
 CREATE PROCEDURE proc_GuiYeuCau
 	@MaGiangVien CHAR(6),
